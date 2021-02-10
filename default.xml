@@ -10,6 +10,10 @@
           fetch="https://github.com/DerpFest-11"
           revision="refs/heads/11" />
 
+  <remote name="synth"
+          fetch="https://github.com/Synth-OS"
+          revision="refs/heads/resonance" />
+
   <remote name="derp-gitlab"
           fetch="https://gitlab.com/DerpFest" />
 
