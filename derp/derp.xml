@@ -8,11 +8,11 @@
   <project path="bionic" name="bionic" remote="derp" />
   <project path="bootable/recovery" name="bootable_recovery" remote="derp" />
   <project path="libcore" name="libcore" remote="derp" />
-  <project path="manifest" name="manifest" remote="derp" />
+  <project path="manifest" name="manifest" remote="synth" />
 
   <!-- Build -->
   <project path="build/blueprint" name="build_blueprint" remote="derp" />
-  <project path="build/make" name="build" remote="derp" >
+  <project path="build/make" name="build" remote="synth" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -21,7 +21,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="derp" >
+  <project path="build/soong" name="build_soong" remote="synth" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -63,7 +63,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" remote="derp" />
-  <project path="frameworks/base" name="frameworks_base" remote="derp" />
+  <project path="frameworks/base" name="frameworks_base" remote="synth" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="derp" />
   <project path="frameworks/native" name="frameworks_native" remote="derp" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="derp" />
@@ -144,8 +144,8 @@
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="derp" />
   <project path="packages/apps/Plugins" name="packages_apps_PotatoPlugins" remote="derp" />
   <project path="packages/apps/SecureElement" name="packages_apps_SecureElement" remote="derp" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="derp" />
-  <project path="packages/apps/Settings/DerpQuest" name="packages_apps_DerpQuest" remote="derp" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="synth" />
+  <project path="packages/apps/Settings/DerpQuest" name="packages_apps_DerpQuest" remote="synth" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="derp" />
   <project path="packages/apps/SimIcons" name="simrat39/icon-pack" remote="github" revision="master" />
   <project path="packages/apps/SoftAPManager" name="packages_apps_SoftAPManager" remote="derp" />
@@ -194,7 +194,7 @@
   <project path="tools/metalava" name="tools_metalava" remote="derp" />
 
   <!-- Vendor -->
-  <project path="vendor/derp" name="vendor_derp" remote="derp" />
+  <project path="vendor/derp" name="vendor_derp" remote="synth" />
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="derp" />
   <project path="vendor/gms" name="vendor_gms" remote="derp-gitlab" revision="11" clone-depth="1" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="derp" />

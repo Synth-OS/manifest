@@ -1,4 +1,4 @@
-DerpFest
+SynthOS
 ==============
 
 Getting Started
@@ -6,10 +6,10 @@ Getting Started
 
 To get started with Android/DerpFest, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
 
-To initialize your local repository using the DerpFest trees, use a command like this:
+To initialize your local repository using the SynthOS trees, use a command like this:
 
 ```bash
-repo init -u git://github.com/DerpFest-11/manifest.git -b 11
+repo init -u git://github.com/Synth-OS/manifest.git -b resonance
 ```
 Then to sync up:
 ```bash
@@ -19,7 +19,7 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 Building the source
 ---------------
 
-The source at DerpFest is well configured for building.
+The source at SynthOS is well configured for building.
 
 ```bash
 . build/envsetup.sh
@@ -40,6 +40,7 @@ Here's my thanks to people who made this possible:
 * BootleggersROM
 * CrDroid
 * CyanogenMod/LineageOS
+* DerpFest
 * DirtyUnicorns
 * Evolution X
 * exTHmUI
